@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>ai.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>cadran</object-name>
+    <object-name>face</object-name>
+    <object-name>RollPtr</object-name>
+    <object-name>aircraft</object-name>
+    <object-name>HorizonLine</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>fond</object-name>
+    <object-name>cadran</object-name>
+    <object-name>face</object-name>
+    <object-name>RollPtr</object-name>
+    <object-name>aircraft</object-name>
+    <object-name>HorizonLine</object-name>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <!-- working for Compositor -->
+  <effect>
+    <inherits-from>glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+
+  <animation>
+    <type>material</type>
+    <object-name>cadran</object-name>
+    <object-name>RollPtr</object-name>
+    <object-name>aircraft</object-name>
+    <object-name>HorizonLine</object-name>
+    <condition>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RollPtr</object-name>
+    <object-name>HorizonLine</object-name>
+    <property>/instrumentation/attitude-indicator/indicated-roll-deg</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>HorizonLine</object-name>
+    <property>orientation/pitch-deg</property>
+    <!--<property>/instrumentation/attitude-indicator/indicated-pitch-deg</property>-->
+    <interpolation>
+      <entry><ind> -90 </ind><dep>  0.04 </dep></entry>
+      <entry><ind> -40 </ind><dep>  0.04 </dep></entry>
+      <entry><ind> -20 </ind><dep>  0.02 </dep></entry>
+      <entry><ind>   0 </ind><dep>  0.00 </dep></entry>
+      <entry><ind>  20 </ind><dep> -0.02 </dep></entry>
+      <entry><ind>  40 </ind><dep> -0.04 </dep></entry>
+      <entry><ind>  90 </ind><dep> -0.04 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

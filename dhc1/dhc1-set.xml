@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Systems/dhc1-base.xml">
+
+  <sim>
+
+    <description>DHC 1 (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+
+    <aircraft-version>0.5</aircraft-version>
+    <status>0.4 Alpha</status>
+    <minimum-fg-version>2018.2.0</minimum-fg-version>
+
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">Systems/dhc1-yasim</aero>
+
+    <rating>
+      <FDM type="int">     3 </FDM>
+      <systems type="int"> 2 </systems>
+      <cockpit type="int"> 3 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+
+    <previews>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/dhc1-0.png</path>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/dhc1-1.png</path>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/dhc1-2.png</path>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/dhc1-3.png</path>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/dhc1-4.png</path>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/dhc1-5.png</path>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/dhc1-6.png</path>
+      </preview>
+    </previews>
+
+    <tags>
+      <tag>De_Havilland_Canada</tag>
+      <tag>trainer</tag>
+      <tag>1940s</tag>
+      <tag>1950s</tag>
+      <tag>1960s</tag>
+      <tag>1970s</tag>
+      <tag>1980s</tag>
+      <tag>1990s</tag>
+      <tag>fixed-gear</tag>
+      <tag>piston</tag>
+      <tag>propeller</tag>
+      <tag>single-engine</tag>
+      <tag>compositor</tag>
+    </tags>
+
+  </sim>
+
+</PropertyList>

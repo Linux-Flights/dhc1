@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>oil-fuel.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>cache</object-name>
+    <object-name>needle1</object-name>
+    <object-name>needle2</object-name>
+    <object-name>needle3</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>cache</object-name>
+    <object-name>needle1</object-name>
+    <object-name>needle2</object-name>
+    <object-name>needle3</object-name>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <!-- working for Compositor -->
+  <effect>
+    <inherits-from>../../../../Effects/Glass/glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>cache</object-name>
+    <object-name>needle1</object-name>
+    <object-name>needle2</object-name>
+    <object-name>needle3</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+  <!-- -degC -->
+  <animation>
+    <type>rotate</type>
+    <object-name>needle1</object-name>
+    <property>engines/engine[0]/oil-temperature</property>
+    <!-- <property>engines/engine[0]/oil-temperature-degC</property> -->
+    <interpolation>
+      <entry><ind>   0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  20 </ind><dep>  20 </dep></entry>
+      <entry><ind>  40 </ind><dep>  42 </dep></entry>
+      <entry><ind>  60 </ind><dep>  73 </dep></entry>
+      <entry><ind>  80 </ind><dep>  95 </dep></entry>
+      <entry><ind> 100 </ind><dep> 120 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle2</object-name>
+    <property>engines/engine[0]/oil-pressure-psi</property>
+    <interpolation>
+      <entry><ind>   0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  50 </ind><dep>  45 </dep></entry>
+      <entry><ind> 100 </ind><dep>  90 </dep></entry>
+      <entry><ind> 150 </ind><dep> 133 </dep></entry>
+      <entry><ind> 200 </ind><dep> 180 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.00602 </x-m>
+      <y-m> -0.01042 </y-m>
+      <z-m> -0.01031 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle3</object-name>
+    <property>engines/engine[0]/fuel-pressure-psi</property>
+    <interpolation>
+      <entry><ind>  0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  5 </ind><dep>  90 </dep></entry>
+      <entry><ind> 10 </ind><dep> 180 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.00602 </x-m>
+      <y-m>  0.01042 </y-m>
+      <z-m> -0.01031 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

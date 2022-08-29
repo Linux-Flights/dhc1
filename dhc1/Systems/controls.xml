@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <lighting>
+    <instruments-norm>0.8</instruments-norm>
+    <landing-lights type="bool">false</landing-lights>
+    <beacon type="bool">false</beacon>
+    <strobe type="bool">false</strobe>
+    <nav-lights type="bool">false</nav-lights>
+    <cabin-lights type="bool">false</cabin-lights>
+    <wing-lights type="bool">false</wing-lights>
+    <taxi-light type="bool">false</taxi-light>
+  </lighting>
+
+  <electric>
+    <battery-switch>0</battery-switch>
+    <alternator-switch>0</alternator-switch>
+    <generator>0</generator>
+    <engines>
+      <engine n="0">
+        <fuel-pump>0</fuel-pump>
+      </engine>
+    </engines>
+  </electric>
+
+  <switches>
+    <master-avionics type="bool">true</master-avionics>
+  </switches>
+
+  <circuit-breakers>
+    <master type="bool">true</master>
+    <flaps type="bool">true</flaps>
+    <pitot-heat type="bool">true</pitot-heat>
+    <instr type="bool">true</instr>
+    <intlt type="bool">true</intlt>
+    <navlt type="bool">true</navlt>
+    <landing type="bool">true</landing>
+    <bcnlt type="bool">true</bcnlt>
+    <strobe type="bool">true</strobe>
+    <turn-coordinator type="bool">true</turn-coordinator>
+    <radio1 type="bool">true</radio1>
+    <radio2 type="bool">true</radio2>
+    <radio3 type="bool">true</radio3>
+    <radio4 type="bool">true</radio4>
+    <radio5 type="bool">true</radio5>
+    <autopilot type="bool">true</autopilot>
+  </circuit-breakers>
+
+  <engines>
+    <engine>
+      <on type="bool">false</on>
+      <rpm type="float">0</rpm>
+      <!--<master-alt type="bool">false</master-alt>-->
+    </engine>
+  </engines>
+
+  <gear>
+    <brake-parking type="bool">true</brake-parking>
+    <tailwheel-lock type="bool">false</tailwheel-lock>
+  </gear>
+
+  <flight>
+    <rudder-trim>   0.00 </rudder-trim>
+    <aileron-trim>  0.02 </aileron-trim>
+    <elevator-trim> 0.06 </elevator-trim>
+  </flight>
+
+</PropertyList>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim include="views.xml">
+
+    <fuel-fraction>0.8</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/dhc1/dhc1-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/dhc1/Sounds/dhc1-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/dhc1/Models/dhc1.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int   n="0"  type="int"> 0 </int>
+        <int   n="1"  type="int"> 0 </int>
+        <int   n="2"  type="int"> 0 </int>
+        <int   n="3"  type="int"> 0 </int>
+        <int   n="4"  type="int"> 0 </int>
+        <int   n="5"  type="int"> 0 </int>
+        <int   n="6"  type="int"> 1 </int>
+        <int   n="7"  type="int"> 1 </int>
+        <int   n="8"  type="int" alias="/sim/model/show-immat">0</int>
+        <int   n="9"  type="int"> 0 </int>
+        <float n="0"  alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="2"  alias="/position/gear-agl-m">0</float>
+        <float n="3"  alias="/position/altitude-ft">0</float>
+        <float n="4"  alias="/engines/engine[0]/rpm"/>
+        <float n="5"  alias="/engines/engine[0]/cranking"/>
+        <float n="6"  alias="/gear/gear[0]/wow/"/>
+        <float n="7"  alias="/gear/gear[1]/wow/"/>
+        <float n="8"  alias="/gear/gear[2]/wow/"/>
+        <float n="9"  alias="/gear/gear[0]/rollspeed-ms"/>
+        <float n="10" alias="/gear/gear[1]/rollspeed-ms"/>
+        <float n="11" alias="/gear/gear[2]/rollspeed-ms"/>
+        <!-- For Bombable -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>
+        <string n="9" type="string" />
+      </generic>
+    </multiplay>
+
+    <flaps include="flaps.xml"/>
+
+    <help include="help.xml"/>
+
+    <menubar include="../Dialogs/dhc1-menu.xml"/>
+
+  </sim>
+
+  <input include="dhc1-keyboard.xml"/>
+
+  <engines include="engines.xml"/>
+
+  <controls include="controls.xml"/>
+
+  <nasal>
+    <doors>
+      <file>Aircraft/dhc1/Nasal/doors.nas</file>
+    </doors>
+    <dhc1>
+      <file>Aircraft/dhc1/Nasal/light.nas</file>
+      <file>Aircraft/dhc1/Nasal/liveries.nas</file>
+      <file>Aircraft/dhc1/Nasal/convert.nas</file>
+      <file>Aircraft/dhc1/Nasal/Electrical.nas</file>
+    </dhc1>
+  </nasal>
+
+</PropertyList>

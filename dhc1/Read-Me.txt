@@ -1,0 +1,85 @@
+English/Français
+
+[English]
+----------
+
+A little history
+================
+
+DHC 1
+=====
+
+Manufacturer                  :
+Type                          :
+Year                          :
+Powerplant                    :
+Wingspan                      :
+Length                        :
+Height                        :
+weight                        :
+Cruise speed                  :
+Crew                          :
+
+Some useful keys:
+=================
+
+d : canopy
+
+Thanks
+======
+
+===============
+BARANGER Emmanuel
+October,  28, 2009
+November, 19, 2019
+August,   29, 2020
+November, 14, 2020
+October,  30, 2021
+November, 04, 2021
+
+http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger@free.fr
+embaranger@gmail.com
+
+
+[Français]
+----------
+
+Un peu d'histoire
+=================
+
+DHC 1
+=====
+
+Constructeur                  :
+Type                          :
+Année                         :
+Moteur                        :
+Envergure                     :
+Longueur                      :
+Hauteur                       :
+Poids à vide                  :
+Vitesse de croisière          :
+Equipage                      :
+
+
+Quelques touches utiles :
+=========================
+
+d : cockpit
+
+Remerciements
+=============
+
+===============
+BARANGER Emmanuel
+28 Octobre  2009
+19 Novembre 2019
+26 Août     2020
+14 Novembre 2020
+30 Octobre  2021
+04 Novembre 2021
+
+http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger@free.fr
+embaranger@gmail.com

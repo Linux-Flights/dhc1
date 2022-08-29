@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <autopilot n="101">
+    <path>Aircraft/dhc1/Systems/glass-rain.xml</path>
+  </autopilot>
+
+</PropertyList>

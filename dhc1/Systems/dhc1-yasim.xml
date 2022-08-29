@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+  DHC1 -     2009 - Emmanuel BARANGER
+  updated    2010 - Emmanuel BARANGER with Melchior's script
+  updated 08/2020 - Emmanuel BARANGER
+
+  sources             : http://en.wikipedia.org/wiki/De_Havilland_Canada_DHC-1_Chipmunk
+
+  Wingspan           :   34 ft 4 in ( 10.47 m  )
+  lenght             :   25 ft 5 in (  7.75 m  )
+  height             :    7 ft 0 in (  2.10 m  )
+  Empty mass         : 1517 lb      (   646 kg )
+  Max takeoff weight : 2200 lb      (   998 kg )
+  Engine             : 1 de Havilland Gipsy Major 1C, 145 hp
+  Cruise speed       :   90 kt
+  Maximum speed      :  120 kt at sea level ( 222 km/h )
+-->
+<airplane mass="1517" version="YASIM_VERSION_CURRENT" mtow-lbs="2200">
+
+  <!-- Approach configuration -->
+  <approach speed="43" aoa="6" fuel="0.3">
+    <control-setting axis="/controls/engines/engine[0]/throttle"        value="0.2"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture"         value="1"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.5"/>
+    <control-setting axis="/controls/flight/flaps"   value="1"/>
+    <control-setting axis="/controls/gear/gear-down" value="1"/>
+  </approach>
+
+  <!-- Cruise configuration -->
+  <cruise speed="90" alt="5000" fuel="1.0">
+    <control-setting axis="/controls/engines/engine[0]/throttle"        value="0.75"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture"         value="1"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/flight/flaps"   value="0"/>
+    <control-setting axis="/controls/gear/gear-down" value="0"/>
+  </cruise>
+
+  <cockpit x="1.345" y="0" z="0.710"/>
+
+  <!-- Casserole -->
+  <fuselage ax=" 3.873" ay=" 0.000" az=" 0.254" bx=" 3.804" by=" 0.000" bz=" 0.254" width="0.152" taper="0.10" midpoint="1"/>
+  <fuselage ax=" 3.804" ay=" 0.000" az=" 0.254" bx=" 3.705" by=" 0.000" bz=" 0.254" width="0.245" taper="0.62" midpoint="1"/>
+  <fuselage ax=" 3.705" ay=" 0.000" az=" 0.254" bx=" 3.584" by=" 0.000" bz=" 0.254" width="0.271" taper="0.90" midpoint="1"/>
+  <!-- Fuselage up -->
+  <fuselage ax=" 3.584" ay=" 0.000" az=" 0.254" bx=" 3.518" by=" 0.000" bz=" 0.254" width="0.360" taper="0.76" midpoint="1"/>
+  <fuselage ax=" 3.518" ay=" 0.000" az=" 0.254" bx=" 3.103" by=" 0.000" bz=" 0.211" width="0.584" taper="0.62" midpoint="1"/>
+  <fuselage ax=" 3.077" ay=" 0.000" az=" 0.211" bx=" 1.976" by=" 0.000" bz=" 0.180" width="0.778" taper="0.74" midpoint="1"/>
+  <fuselage ax=" 1.976" ay=" 0.000" az=" 0.180" bx="-0.386" by=" 0.000" bz=" 0.062" width="0.778" taper="1.00" midpoint="1"/>
+  <fuselage ax="-0.386" ay=" 0.000" az=" 0.062" bx="-2.172" by=" 0.000" bz=" 0.114" width="0.778" taper="0.58" midpoint="0"/>
+  <fuselage ax="-2.172" ay=" 0.000" az=" 0.114" bx="-3.836" by=" 0.000" bz="-0.005" width="0.451" taper="0.20" midpoint="0"/>
+  <!-- Fuselage down -->
+  <fuselage ax=" 3.526" ay=" 0.000" az="-0.097" bx=" 3.109" by=" 0.000" bz="-0.097" width="0.584" taper="0.62" midpoint="1"/>
+  <fuselage ax=" 3.109" ay=" 0.000" az="-0.097" bx=" 1.976" by=" 0.000" bz="-0.097" width="0.778" taper="0.74" midpoint="1"/>
+  <fuselage ax=" 1.976" ay=" 0.000" az="-0.097" bx=" 0.705" by=" 0.000" bz="-0.097" width="0.778" taper="1.00" midpoint="1"/>
+  <fuselage ax=" 0.705" ay=" 0.000" az="-0.097" bx=" 1.976" by=" 0.000" bz="-0.097" width="0.778" taper="1.00" midpoint="1"/>
+  <fuselage ax=" 0.705" ay=" 0.000" az="-0.097" bx="-0.389" by=" 0.000" bz="-0.026" width="0.778" taper="1.00" midpoint="1"/>
+  <fuselage ax="-0.389" ay=" 0.000" az="-0.026" bx="-3.447" by=" 0.000" bz="-0.071" width="0.778" taper="0.25" midpoint="0"/>
+  <fuselage ax="-3.447" ay=" 0.000" az="-0.071" bx="-3.836" by=" 0.000" bz="-0.038" width="0.184" taper="0.25" midpoint="0"/>
+  <!-- Cockpit -->
+  <fuselage ax=" 1.919" ay=" 0.000" az=" 0.392" bx=" 1.470" by=" 0.000" bz=" 0.583" width="0.584" taper="0.62" midpoint="1"/>
+  <fuselage ax=" 1.588" ay=" 0.000" az=" 0.561" bx=" 0.232" by=" 0.000" bz=" 0.565" width="0.584" taper="1.00" midpoint="1"/>
+  <fuselage ax=" 0.353" ay=" 0.000" az=" 0.581" bx="-0.252" by=" 0.000" bz=" 0.309" width="0.584" taper="0.50" midpoint="0"/>
+
+  <wing x="1.073" y="0" z="-0.301"
+        chord="2.000"
+        length="5.212"
+        taper="0.55"
+        dihedral="4"
+        sweep="-2"
+        camber="0.005">
+        <stall   aoa="20"  width="1"     peak="1.5"/>
+        <flap0 start="0.078" end="0.555" lift="1.4" drag="1.5"/>
+        <flap1 start="0.555" end="0.946" lift="1.2" drag="1.1"/>
+
+        <control-input  control="FLAP0" axis="/controls/flight/flaps"/>
+        <control-input  control="FLAP1" axis="/controls/flight/aileron" split="true"/>
+        <control-input  control="FLAP1" axis="/controls/flight/aileron-trim" split="true"/>
+
+        <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
+        <control-output control="FLAP1" side="left"  prop="/surface-positions/left-aileron-pos-norm"/>
+        <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
+
+        <control-speed  control="FLAP1" transition-time="0.01"/>
+        <control-speed  control="FLAP0" transition-time="5"/>
+  </wing>
+
+  <hstab x="-3.183" y="0" z="0.077"
+         chord="1.185"
+         length="1.802"
+         taper="0.39"
+         sweep="6">
+         <stall   aoa="18"  width="1"    peak="1.5"/>
+         <flap0 start="0.085" end="0.91" lift="1.4" drag="1.1"/>
+
+         <control-input  control="FLAP0" axis="/controls/flight/elevator"/>
+         <control-input  control="FLAP0" axis="/controls/flight/elevator-trim"/>
+
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+  </hstab>
+
+  <vstab x="-2.758" y="0" z="0.100"
+       chord="1.350"
+       length="1.306"
+       taper="0.34"
+       sweep="10">
+       <stall   aoa="18" width="1"     peak="1.5"/>
+       <flap0 start="0"    end="0.935" lift="1.6" drag="1.3"/>
+
+       <control-input  control="FLAP0" axis="/controls/flight/rudder" invert="true"/>
+
+       <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" min="1" max="-1"/>
+  </vstab>
+
+  <!-- de Havilland Gipsy Major
+
+                 sources      : http://en.wikipedia.org/wiki/De_Havilland_Gipsy_Major
+
+                 type         : 4-cylinder air-cooled inverted inline piston aircraft engine
+                 power        : 122 hp at 2100 rpm, 145 hp at 2550 rpm
+                 weight       : 300 lb (136 kg)
+                 Displacement : 373.7 in3 (6.124 L)
+                 Compression  : 5.25:1
+  -->
+  <propeller x="2.935" y="0" z="0.254"
+             mass="300"
+             radius="1"
+             moment="2.5"
+             cruise-speed="90"
+             cruise-rpm="2600"
+             cruise-alt="5000"
+             cruise-power="150"
+             takeoff-power="112"
+             takeoff-rpm="2575" >
+             <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
+             <actionpt x="3.690" y="0" z="0.254" />
+             <piston-engine eng-rpm="2700"
+                            alt="5000"
+                            eng-power="145"
+                            displacement="373.7"
+                            compression="5.25">
+                            <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/>
+                            <control-input control="STARTER"  axis="/controls/engines/engine[0]/starter"/>
+                            <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos"/>
+                            <control-input control="MIXTURE"  axis="/controls/engines/engine[0]/mixture"/>
+             </piston-engine>
+  </propeller>
+
+  <gear x="2.057" y="1.331" z="-1.413"
+        compression="0.20"
+        spring="0.6">
+        <control-input  control="BRAKE"  axis="/controls/gear/brake-left"    split="true"/>
+        <control-input  control="BRAKE"  axis="/controls/gear/brake-parking" split="true"/>
+        <control-input  control="EXTEND" axis="/controls/gear/gear-down"/>
+        <control-input  control="STEER"  axis="/sim/gears/toe-left"/>
+
+        <control-output control="EXTEND" prop="gear/gear[0]/position-norm"/>
+
+        <control-speed  control="EXTEND" transition-time="7"/>
+  </gear>
+
+  <gear x="2.057" y="-1.331" z="-1.413"
+        compression="0.20"
+        spring="0.6">
+        <control-input  control="BRAKE"  axis="/controls/gear/brake-right"   split="true"/>
+        <control-input  control="BRAKE"  axis="/controls/gear/brake-parking" split="true"/>
+        <control-input  control="EXTEND" axis="/controls/gear/gear-down"/>
+        <control-input  control="STEER"  axis="/sim/gears/toe-right"/>
+
+        <control-output control="EXTEND" prop="gear/gear[1]/position-norm"/>
+
+        <control-speed  control="EXTEND" transition-time="7"/>
+  </gear>
+
+  <gear x="-3.266" y="0" z="-0.617"
+        compression="0.15"
+        spring="0.6">
+        <control-input  control="STEER"  axis="/controls/flight/rudder" square="true" src0="-1.0" src1="1.0" dst0="0.8" dst1="-0.8"/>
+        <control-input  control="EXTEND" axis="/controls/gear/gear-down"/>
+
+        <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
+
+        <control-speed  control="EXTEND" transition-time="7"/>
+   </gear>
+
+  <!-- Fuel  -->
+  <tank x="0.72" y="0" z="-0.272" capacity="169" />
+
+  <!-- Mass displacment -->
+  <ballast x="3" y="0" z="-0.2" mass="160"/>
+
+</airplane>
